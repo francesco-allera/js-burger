@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Burger</title>
+</head>
+<body>
+
+   <!-- Page Container -->
+   <div class="container">
+
+      <!-- Header with h1 -->
+      <header>
+         <h1>create your burger</h1>
+      </header>
+      <!-- END Header -->
+
+      <!-- Main with Inputs -->
+      <main>
+         <!-- Input Burger Name -->
+         <div class="burger-name">
+            <input type="text" name="name" id="burger-name" placeholder="name your burger">
+         </div>
+         <!-- END Input Burger Name -->
+
+         <!-- Ingredients List -->
+         <div class="ingredients">
+            <h2>ingredients</h2>
+            <ul>
+               <!-- Cheese -->
+               <li>
+                  <img src="./img/cheese.svg" alt="cheese">
+                  <span>cheese</span>
+                  <label for="cheese">add
+                     <input type="checkbox" class="ingredient" name="cheese" id="cheese" value="4">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+               <!-- Tomato -->
+               <li>
+                  <img src="./img/tomato.svg" alt="tomato">
+                  <span>tomato</span>
+                  <label for="tomato">add
+                     <input type="checkbox" class="ingredient" name="tomato" id="tomato" value="4">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+               <!-- Egg -->
+               <li>
+                  <img src="./img/fried-egg.svg" alt="egg">
+                  <span>egg</span>
+                  <label for="egg">add
+                     <input type="checkbox" class="ingredient" name="egg" id="egg" value="6">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+               <!-- Lettuce -->
+               <li>
+                  <img src="./img/lettuce.svg" alt="lettuce">
+                  <span>lettuce</span>
+                  <label for="lettuce">add
+                     <input type="checkbox" class="ingredient" name="lettuce" id="lettuce" value="4">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+               <!-- Mustard -->
+               <li>
+                  <img src="./img/mustard.svg" alt="mustard">
+                  <span>mustard</span>
+                  <label for="mustard">add
+                     <input type="checkbox" class="ingredient" name="mustard" id="mustard" value="2">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+               <!-- Ketchup -->
+               <li>
+                  <img src="./img/ketchup.svg" alt="ketchup">
+                  <span>ketchup</span>
+                  <label for="ketchup">add
+                     <input type="checkbox" class="ingredient" name="ketchup" id="ketchup" value="2">
+                     <span class="checking"></span>
+                  </label>
+               </li>
+            </ul>
+         </div>
+         <!-- END Ingredients List -->
+
+         <!-- Input Discount -->
+         <div class="discount">
+            discount coupon
+            <input type="text" name="" id="coupon" placeholder="insert your coupon">
+         </div>
+         <!-- END Input Discount -->
+
+         <!-- Submit Button -->
+         <div class="submit-button">
+            <button id="submit-button">calculate</button>
+         </div>
+         <!-- END Submit Button -->
+      </main>
+      <!-- END Main -->
+
+      <!-- Footer with Price -->
+      <footer>
+         <h2>your price</h2>
+         <h2 id="total"></h2>
+      </footer>
+      <!-- END Footer -->
+   </div>
+   <!-- END Page Container -->
+
+   <script src="./js/script.js"></script>
+</body>
+</html>

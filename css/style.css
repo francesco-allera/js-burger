@@ -1,0 +1,164 @@
+/* ----- General Settings ----- */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-transform: capitalize;
+}
+body {
+   background: #fff5e2;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 10px;
+   font-weight: 500;
+}
+header, main, footer {
+   padding: 0 40px;
+}
+h1 {
+   font-size: 30px;
+}
+h2 {
+   font-size: 25px;
+}
+input[type=text] {
+   border: none;
+   background: none;
+}
+input[type=text]:focus, input[type=text]:active {
+   outline: none;
+   background: #fff5e2;
+}
+.discount, .discount input, #submit-button {
+   font-size: 16px;
+}
+.container {
+   width: 850px;
+   margin: 0 auto;
+}
+
+/* ----- Header ----- */
+header {
+   height: 110px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   background: #fdbb40;
+}
+header::after {
+   content: '';
+   background-image: url('../img/burger-top.png');
+   background-repeat: no-repeat;
+   width: 240px;
+   height: 240px;
+   position: absolute;
+   top: -30px;
+   right: -50px;
+}
+
+/* ----- Main ----- */
+main {
+   height: calc(100vh - 200px); /* 110px header, 90px footer */
+   overflow-y: auto;
+   background: #fff;
+}
+main > * {
+   margin-top: 40px;
+}
+
+/* ----- Input Burger Name ----- */
+.burger-name input {
+   font-size: 25px;
+}
+
+/* ----- Ingredients List ----- */
+.ingredients ul {
+   display: flex;
+   flex-wrap: wrap;
+}
+.ingredients ul li {
+   width: 50%;
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+}
+.ingredients ul li > :not(:first-child) {
+   margin-left: 20px;
+}
+.ingredients ul li img {
+   height: 56px;
+}
+.ingredients ul li span {
+   font-size: 17px;
+}
+
+/* ----- Ingredient List LABEL ----- */
+.ingredients ul li label {
+   display: block;
+   padding-left: 30px;
+   color: #f9395e;
+   position: relative;
+   text-transform: lowercase;
+   cursor: pointer;
+}
+.ingredients ul li label input[type=checkbox] {
+   visibility: hidden;
+}
+.checking {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #f9395e;
+}
+.checking::after {
+   display: none;
+   content: '';
+   width: 8px;
+   height: 16px;
+   position: absolute;
+   top: -6px;
+   left: 2px;
+   border: solid #000;
+   border-width: 0 4px 4px 0;
+   transform: rotate(45deg);
+}
+.ingredients input:checked + .checking::after {
+   display: block;
+}
+
+/* ----- Input Discount ----- */
+.discount input {
+   width: 50%;
+   padding: 5px;
+   margin-left: 15px;
+   text-transform: lowercase;
+}
+
+/* ----- Submit Button ----- */
+.submit-button {
+   text-align: center;
+}
+#submit-button {
+   padding: 12px 24px;
+   border: none;
+   font-weight: 700;
+   background: #fdbb40;
+   cursor: pointer;
+}
+
+/* ----- Footer ----- */
+footer {
+   height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 700;
+   color: #fff;
+   background: #f9395e;
+}
+#total:before {
+   content: '$';
+   margin-right: 10px;
+}
