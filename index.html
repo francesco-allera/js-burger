@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Burger</title>
+</head>
+<body>
+
+    <!-- app -->
+    <div id="app">
+        <!-- header with h1 + img -->
+        <header>
+            <h1>
+                create your burger
+            </h1>
+
+            <img id="icon-burger" src="./img/burger_top.png" alt="burger">
+        </header>
+        <!-- /header -->
+
+        <!-- main with inputs -->
+        <main>
+            <!-- input burger name -->
+            <div class="text-center">
+                <input type="text" name="burger-name" id="burger-name" placeholder="name your burger">
+            </div>
+            <!-- /input -->
+
+            <h2>
+                ingredients
+            </h2>
+
+            <!-- list with 6 ingredients-->
+            <ul class="ingredients">
+                <!-- cheese -->
+                <li>
+                    <img src="./img/cheese.svg" alt="cheese">
+
+                    <span class="ingredient">cheese</span>
+
+                    <label for="cheese">
+                        add
+                        <input type="checkbox" name="cheese" id="cheese" value="4">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /cheese -->
+
+                <!-- tomato -->
+                <li>
+                    <img src="./img/tomato.svg" alt="tomato">
+
+                    <span class="ingredient">tomato</span>
+
+                    <label for="tomato">
+                        add
+                        <input type="checkbox" name="tomato" id="tomato" value="4">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /tomato -->
+
+                <!-- egg -->
+                <li>
+                    <img src="./img/fried-egg.svg" alt="fried-egg">
+
+                    <span class="ingredient">egg</span>
+
+                    <label for="egg">
+                        add
+                        <input type="checkbox" name="egg" id="egg" value="6">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /egg -->
+
+                <!-- lettuce -->
+                <li>
+                    <img src="./img/lettuce.svg" alt="lettuce">
+
+                    <span class="ingredient">lettuce</span>
+
+                    <label for="lettuce">
+                        add
+                        <input type="checkbox" name="lettuce" id="lettuce" value="4">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /lettuce -->
+
+                <!-- mustard -->
+                <li>
+                    <img src="./img/mustard.svg" alt="mustard">
+
+                    <span class="ingredient">mustard</span>
+
+                    <label for="mustard">
+                        add
+                        <input type="checkbox" name="mustard" id="mustard" value="2">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /mustard -->
+
+                <!-- ketchup -->
+                <li>
+                    <img src="./img/ketchup.svg" alt="ketchup">
+
+                    <span class="ingredient">ketchup</span>
+
+                    <label for="ketchup">
+                        add
+                        <input type="checkbox" name="ketchup" id="ketchup" value="2">
+                        <span class="checking"></span>
+                    </label>
+                </li>
+                <!-- /ketchup -->
+            </ul>
+            <!-- /list -->
+
+            <!-- input coupon -->
+            <div class="coupon text-center">
+                <label for="coupon">
+                    discount coupon
+                </label>
+                <input type="text" name="coupon" id="coupon" placeholder="insert your coupon">
+            </div>
+            <!-- /input -->
+
+            <!-- btn calculate -->
+            <div class="text-center">
+                <button type="submit" id="calculate">
+                    calculate
+                </button>
+            </div>
+            <!-- /btn -->
+        </main>
+        <!-- /main -->
+
+        <!-- footer with price -->
+        <footer>
+            <h2>
+                your price
+            </h2>
+
+            <h2 id="total"></h2>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- /app -->
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
